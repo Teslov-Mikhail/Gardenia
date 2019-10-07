@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+html, body{
+  overflow: hidden;
+  font-family: 'Special Elite', cursive;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("../gfx/dirt1.png");
+  user-select: none;
+}
+
+section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn.active {
+  margin-left: 20px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: margin-left;
+  pointer-events: all;
+}
+
+.btn:hover {
+  box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.seed-bag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: right;
+  overflow: auto;
+}
+
+.list-element {
+  background-color: #fff;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: margin-left;
+  pointer-events: all;
+}
+
+.list-element.active {
+  margin-right: 20px;
+}
+
+.list-element:hover {
+  box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.list-element h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.list-element p {
+  padding: 0;
+  margin: 2px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+#ui {
+  pointer-events: none;
+}
+
+#ui .resources {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#game {
+  transform-origin: top left;
+  width: 2000px;
+  height: 2000px;
+}
+
+#time {
+  pointer-events: none;
+  transition-duration: 200ms;
+}
+
+#time .clock {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.entity{
+  position: absolute;
+  pointer-events: none;
+}
+
+.entity.interactive{
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.entity.interactive:hover{
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+}
+
+.help{
+  font-family: "Courier new";
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  background: #fff;
+  overflow: auto;
+  max-width: 40%;
+}
+
+.help h4{
+  text-align: center;
+}
+
+.help img{
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.scan{
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: margin-left;
+  pointer-events: all;
+}
